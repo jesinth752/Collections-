@@ -9,7 +9,7 @@ public class ArrayListOp {
     private static final Logger log = Logger.getLogger("InfoLogging");
     public static void main(String[] args) {
         Scanner input=new Scanner(System.in);
-        ArrayList<Integer> List= new ArrayList<Integer>();
+        ArrayList<Integer> list= new ArrayList<Integer>();
 
         int opt;
         int val;
@@ -23,23 +23,23 @@ public class ArrayListOp {
                     case 1:
                         log.info("Enter value : ");
                         val = input.nextInt();
-                        List.add(val);
+                        list.add(val);
                         break;
                     case 2:
                         log.info("Enter Position : ");
                         pos = input.nextInt();
                         log.info("Enter value : ");
                         val = input.nextInt();
-                        List.set(pos, val);
+                        list.set(pos, val);
                         break;
                     case 3:
                         log.info("Enter Position : ");
                         pos = input.nextInt();
-                        List.remove(pos);
+                        list.remove(pos);
                         break;
 
                     case 4:
-                        String ds="Size:"+String.valueOf(List.size());
+                        String ds="Size:"+List.size();
                         log.info(ds);
                         break;
                     case 5:
@@ -48,7 +48,7 @@ public class ArrayListOp {
                         break;
                     case 6:
                         log.info("Cleared");
-                        List.clear();
+                        list.clear();
                         break;
                     default:
                         log.info("Invalid choice");
