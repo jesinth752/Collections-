@@ -20,6 +20,10 @@ class Center {
     class Arr {
         Arr(int val) {
             rec[size-1]=val;
+            int run()
+            {
+             return size;
+            }
 
 
         }
@@ -34,6 +38,7 @@ class Center {
     {
         increase();
         Arr a1=new Arr(val);
+        a1.run();
     }
     void display()
     {
@@ -79,7 +84,8 @@ class Center {
     }
      void rotation(int k)
      {
-         int dum,j;
+         int dum;
+         int j;
          for(int i=0;i<k;i++)
          {
              dum=rec[0];
